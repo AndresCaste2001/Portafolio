@@ -129,7 +129,9 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, ion-icon, a, button, time, span { display: block;
+  border-radius: 0px;
+}
 
 button {
   font: inherit;
@@ -749,9 +751,10 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 60%;
   filter: grayscale(1);
   transition: var(--transition-1);
+  border-radius: 100px;
 }
 
 .clients-item img:hover { filter: grayscale(0); }
@@ -955,7 +958,7 @@ main {
 
 .project-img {
   position: relative;
-  width: 100%;
+  width: 200px;
   height: 200px;
   border-radius: 16px;
   overflow: hidden;
@@ -967,7 +970,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: transparent;
   z-index: 1;
@@ -1001,10 +1004,13 @@ main {
 .project-item-icon-box ion-icon { --ionicon-stroke-width: 50px; }
 
 .project-img img {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   transition: var(--transition-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-item > a:hover img { transform: scale(1.1); }
@@ -1339,7 +1345,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 120px; 
+    border-radius: 100px;
+  }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1835,7 +1843,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 150px; 
+  }
 
   .info-content .name {
     white-space: nowrap;
